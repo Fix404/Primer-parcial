@@ -1,11 +1,11 @@
-import java.util.Scanner
-public class Calculadora_MaximilianoNiscola {
-    public static void main(String[] args) {
+import java. util. *;
 
-        /* Se plantea la entrada de variables */
+class Calculadora_MaximilianoNiscola {
+  public static void main(String[] args) {
+     /* Se plantea la entrada de variables */
         Scanner sc=new Scanner(System.in);
         int operation, number_1, number_2;
-        double result;
+        double result=0;
         do {
             System.out.println("Bienvenido a la calculadora");
             System.out.println("A continuación se presentan las distintas operaciones:");
@@ -32,15 +32,15 @@ public class Calculadora_MaximilianoNiscola {
                     result=number_1*number_2;
                 }else if (operation == 4){
                     if (number_2 != 0){
-                        result=number_1/number_2
+                        result=number_1/number_2;
                     }else{
                         System.out.println("El denominador de la división no puede ser cero");
                     }
                 }
             }
-            System.out.println("El resultado de la operación es ", result);
+            System.out.println("El resultado de la operación es "+result);
         } while (operation != 0);
 
         System.out.println("Sesión terminada");
-    }
+  }
 }
